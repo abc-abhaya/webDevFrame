@@ -14,7 +14,7 @@ module.exports = merge(entry, {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			filename: 'index[contenthash:8].html',
+			filename: 'index.html',
 			inject: 'head',
 			scriptLoading: 'defer',
 			template: './src/index.html',
