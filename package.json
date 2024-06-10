@@ -1,17 +1,21 @@
 {
+	"homepage": "https://abc-abhaya.github.io/webdevframe",
 	"name": "webdevframe",
 	"version": "1.0.0",
 	"description": "",
 	"private": true,
 	"scripts": {
 		"start": "webpack-dev-server --config webpack.dev.js --open",
-		"build": "webpack --config webpack.prod.js"
+		"build": "webpack --config webpack.prod.js",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"css-loader": "^7.1.2",
+		"gh-pages": "^6.1.1",
 		"html-loader": "^5.0.0",
 		"html-webpack-plugin": "^5.6.0",
 		"mini-css-extract-plugin": "^2.9.0",
